@@ -504,25 +504,41 @@
       "description": "通过允许此操作，您的用户可以使用未加密的 HTTP 端口连接到系统。 （不建议）",
       "label": "☑️ 允许 HTTP 连接"
     },
+    "httpupgrade_enable": {
+      "description": "HTTPUpgrade 在直接使用连接之前完成了 HTTP 1.1 升级请求和响应。它类似于 WebSocket，创建了一个直接通道，可以被许多反向代理和 CDN 转发，而无需处理 WebSocket 协议本身的所有问题。\n⚠️ 在基于 Xray 的客户端中不可用。仅支持 HiddifyNext、Singbox 和 V2fly 客户端。",
+      "label": "🆙 启用 HTTPUpgrade 模式"
+    },
     "hysteria": {
       "description": "Hysteria 是一款功能齐全的代理和中继工具，针对有损、不稳定的连接（例如卫星网络、拥挤的公共 Wi-Fi、从中国连接到国外服务器）进行了优化",
-      "label": "歇斯底里"
+      "label": "Hysteria （歇斯底里）"
+    },
+    "hysteria_down_mbps": {
+      "description": "Hysteria 最大下载速度",
+      "label": "⬇️ Hysteria 下载速度 (Mbps)"
     },
     "hysteria_enable": {
       "description": "启用基于 UDP 的 Hysteria 协议",
-      "label": "启用歇斯底里2"
+      "label": "启用 Hysteria2"
+    },
+    "hysteria_obfs_enable": {
+      "description": "启用 Hysteria 混淆（Salamander）",
+      "label": "🎛 启用 Hysteria OBFS"
     },
     "hysteria_port": {
       "description": "Hysteria UDP 端口，例如 5678",
       "label": "🔍 Hysteria2 端口"
     },
+    "hysteria_up_mbps": {
+      "description": "Hysteria 最大上传速度",
+      "label": "⬆️ Hysteria 上行速率 (Mbps)"
+    },
     "is_parent": {
       "description": "config.is_parent.description",
-      "label": "家长小组"
+      "label": "Parent Panel"
     },
     "kcp": {
       "description": "KCP 配置可以在此部分中设置。",
-      "label": "韩国共产党"
+      "label": "KCP"
     },
     "kcp_enable": {
       "description": "它是基于UDP的协议",
@@ -530,19 +546,59 @@
     },
     "kcp_ports": {
       "description": "逗号分隔的整数，指示用作 KCP 连接的端口。",
-      "label": "KCP 港口"
+      "label": "KCP 端口"
     },
     "lang": {
       "description": "选择用户区域的语言",
-      "label": "🗺️ 用户区语言"
+      "label": "🗺️ 用户语言"
     },
     "last_hash": {
-      "description": "config.last_hash.描述",
-      "label": "配置.last_hash.label"
+      "description": "config.last_hash.description",
+      "label": "config.last_hash.label"
     },
     "license": {
       "description": "要将本产品用于商业用途，您必须购买其许可证",
       "label": "许可证代码"
+    },
+    "mux": {
+      "description": "MUX (Multiplex) 配置可在此被启用",
+      "label": "MUX 配置"
+    },
+    "mux_brutal_down_mbps": {
+      "description": "TCP-Brutal 最大下载速度",
+      "label": "⬇️ MUX Brutal 下载速度 (Mbps)"
+    },
+    "mux_brutal_enable": {
+      "description": "启用 TCP-Brutal 拥塞控制算法",
+      "label": "☣️ MUX Brutal"
+    },
+    "mux_brutal_up_mbps": {
+      "description": "TCP-Bruta 最大上传速度",
+      "label": "⬆️ MUX Brutal 上传速度 (Mbps)"
+    },
+    "mux_enable": {
+      "description": "Mux 需要兼容的客户端。  Hiddify Next 和 Singbox 中的 Mux 与 XRay 不兼容",
+      "label": "Ⓜ️ 启用MUX (⚠️ 部分客户端不兼容 )"
+    },
+    "mux_max_connections": {
+      "description": "最大连接数 （与 Max Streams 冲突）",
+      "label": "⛓ MUX 最大连接数"
+    },
+    "mux_max_streams": {
+      "description": "Maximum Multiplexed streams in a connection before opening a new connection",
+      "label": "↗️ MUX Max Streams"
+    },
+    "mux_min_streams": {
+      "description": "Minimum Multiplexed streams in a connection before opening a new connection",
+      "label": "↘️ MUX Min Streams"
+    },
+    "mux_padding_enable": {
+      "description": "启用 MUX Padding",
+      "label": "⟹ MUX Padding"
+    },
+    "mux_protocol": {
+      "description": "ℹ️ Multiplex Protocol. 默认使用 'sMux' \n<br>\n➖ sMux: Stream Multiplexing\n<br>\n➖ YaMux: Yet Another Multiplexer\n<br>\n➖ h2Mux: Multiplexing Streams Over HTTP/2",
+      "label": "♍️ MUX 协议"
     },
     "netdata": {
       "description": "用于显示资源。使用您服务器的 CPU，但不会太多。",
@@ -557,28 +613,32 @@
       "label": "ℹ️仅限IPv4"
     },
     "package_mode": {
-      "description": "指定您想要发布的包还是开发的包",
-      "label": "🔄 包更新模式"
+      "description": "指定您想要发行版还是Beta版",
+      "label": "🔄 Package 更新模式"
     },
     "parent_panel": {
       "description": "您可以连接到中央面板仅定义一个用户，所有服务器的使用情况将累积添加。",
-      "label": "父面板（多服务器）"
+      "label": "Parent Panel（多服务器）"
     },
     "path_grpc": {
       "description": "配置中的 gRPC 路径",
       "label": "ℹ️ gRPC 路径"
+    },
+    "path_httpupgrade": {
+      "description": "应当是随机的",
+      "label": "ℹ️ HTTP Upgrade 路径"
     },
     "path_ss": {
       "description": "链接中的 Shadowsocks 路径",
       "label": "Shadowsocks 路径"
     },
     "path_tcp": {
-      "description": "对于代理链接",
+      "description": "用于代理链接",
       "label": "ℹ️ TCP 配置路径"
     },
     "path_trojan": {
-      "description": "对于木马链接",
-      "label": "ℹ️木马路径"
+      "description": "对于Trojan链接",
+      "label": "ℹ️Trojan路径"
     },
     "path_v2ray": {
       "description": "设置 V2Ray 配置路径",
@@ -601,16 +661,27 @@
       "label": "代理设置"
     },
     "proxy_path": {
-      "description": "我们使用秘密代理路径来隐藏我们的政府代理",
+      "description": "我们使用秘密代理路径来隐藏行踪，避免政府监控",
       "label": "ℹ️ 秘密代理路径"
+    },
+    "proxy_path_admin": {
+      "description": "我们使用秘密代理路径来隐藏行踪，避免政府和机器人监控",
+      "label": "🔐 管理员代理路径"
+    },
+    "proxy_path_client": {
+      "label": "🔏 客户端代理路径"
     },
     "reality": {
       "description": "REALITY 消除了服务器端 TLS 指纹功能",
-      "label": "现实"
+      "label": "Reality"
     },
     "reality_fallback_domain": {
       "description": "当 GFW 访问服务器名称中的网站时，将被重定向到该域。",
-      "label": "🌍 现实后备域"
+      "label": "🌍 Reality后备域"
+    },
+    "reality_port": {
+      "description": "你可以为你的Reality自定义一个端口来降低系统消耗。（Allow direct connection to proxies should be yes）",
+      "label": "↔️  直连 Reality 端口"
     },
     "reality_private_key": {
       "description": "不要改变它",
@@ -622,15 +693,15 @@
     },
     "reality_server_names": {
       "description": "您可以以逗号分隔的格式添加多个服务器名称",
-      "label": "🌎 现实服务器名称"
+      "label": "🌎 Reality服务器名称"
     },
     "reality_short_ids": {
       "description": "不要改变它",
       "label": "🆔 短 ID"
     },
     "restls": {
-      "description": "配置.restls.描述",
-      "label": "配置.restls.标签"
+      "description": "config.restls.description",
+      "label": "RestTLS"
     },
     "restls1_2_domain": {
       "description": "config.restls1_2_domain.description",
@@ -640,9 +711,24 @@
       "description": "config.restls1_3_domain.description",
       "label": "config.restls1_3_domain.label"
     },
+    "shadowsocks": {
+      "description": "Shadowsocks 是一个高速的翻墙隧道代理",
+      "label": "Shadowsocks"
+    },
+    "shadowsocks2022_enable": {
+      "description": "Shadowsocks 2022 是一种安全的 TCP 和 UDP 流量代理协议。代理流量与随机字节流无法区分，因此可以绕过依赖深度数据包检查（DPI）的防火墙和互联网审查制度。",
+      "label": "⭕️ 开启 Shadowsocks 2022"
+    },
+    "shadowsocks2022_method": {
+      "description": "This method also used in ShadowTLS and SSFakeTLS",
+      "label": "🔐 Shadowsocks 加密方式"
+    },
+    "shadowsocks2022_port": {
+      "label": "↔️ Shadowsocks 2022 端口"
+    },
     "shadowtls": {
-      "description": "向防火墙公开真实 tls 握手的代理。\n\n它的工作方式类似于木马，但不需要签名证书。防火墙将看到与您选择的有效证书的真实 tls 握手。",
-      "label": "影子TLS"
+      "description": "向防火墙公开真实 tls 握手的代理。\n\n它的工作方式类似于Trojan，但不需要签名证书。防火墙将看到与您选择的有效证书的真实 tls 握手。",
+      "label": "ShadowTLS"
     },
     "shadowtls_enable": {
       "description": "ShadowTLS 是一种新协议，但它可以使用 FakeTLS 向政府隐藏流量",
@@ -650,23 +736,23 @@
     },
     "shadowtls_fakedomain": {
       "description": "请使用您数据中心内的知名域名。例如，如果您在 azure 数据中心，microsoft-update.com 就是一个很好的例子",
-      "label": "🌍 ShadowTLS 假域名"
+      "label": "🌍 ShadowTLS 伪装域名"
     },
     "shared_secret": {
-      "description": "一些代理目前不支持会计，因此我们必须为它们使用秘密",
-      "label": "🔐共享的秘密"
+      "description": "一些代理目前不支持审计，因此我们必须为它们使用密钥",
+      "label": "🔐共享的密钥"
     },
     "show_usage_in_sublink": {
-      "description": "此选项会在用户的子链接中创建一个假配置，显示用户的剩余音量",
+      "description": "此选项会在用户的子链接中创建一个假配置，显示用户的剩余容量",
       "label": "👁️‍🗨️ 在子链接中显示用法"
     },
     "speed_test": {
       "description": "允许您的用户进行速度测试。它可以帮助他们识别链接质量",
-      "label": "🚀 速度测试"
+      "label": "🚀 测速"
     },
     "ssfaketls": {
       "description": "Shadowsocks FakeTLS 是一个简单的混淆工具，将日期封装在 tls 数据包中",
-      "label": "Shadowsocks 假TLS"
+      "label": "Shadowsocks FakeTLS"
     },
     "ssfaketls_enable": {
       "description": "不推荐简单的 OBFS 协议",
@@ -674,7 +760,7 @@
     },
     "ssfaketls_fakedomain": {
       "description": "请使用您数据中心内的知名域名。例如，如果您位于 Azure 数据中心，microsoft-update.com 就是一个很好的例子",
-      "label": "🌍 SS FakeTLS 假域名"
+      "label": "🌍 SS FakeTLS FakeDomain"
     },
     "ssh": {
       "description": "ℹ️ SSH 代理，也称为 SSH 隧道或 SSH 端口转发，是一种通过不安全网络在两台计算机之间创建安全通信通道的安全方法。我们有一个与 ssh 服务器完全不同的特定应用程序，无法执行任何命令",
@@ -689,24 +775,24 @@
       "label": "↔️ SSH 代理端口"
     },
     "ssh_server_redis_url": {
-      "description": "不曾用过",
+      "description": "Not Used",
       "label": "SSH用户数据库地址"
     },
     "ssr": {
       "description": "ShadowsocksR是原始Shadowsocks项目的一个分支，号称在安全性和稳定性方面更胜一筹。",
-      "label": "固态继电器"
+      "label": "SSR"
     },
     "ssr_enable": {
-      "description": "ShadowsocksR 是原始 Shadowsocks 项目的 Fork，号称在安全性和稳定性方面更胜一筹。未测试。不支持记账。",
+      "description": "ShadowsocksR 是原始 Shadowsocks 项目的 Fork，号称在安全性和稳定性方面更胜一筹。未测试。不支持审计。",
       "label": "启用S​​SR"
     },
     "ssr_fakedomain": {
       "description": "请在您的数据中心使用众所周知的域。例如，如果您在 Azure 数据中心，microsoft-update.com 就是一个很好的例子",
-      "label": "SSR 假域名"
+      "label": "SSR FakeDomain"
     },
     "telegram": {
-      "description": "专为 Telegram 设计的代理，可绕过 Telegram 过滤",
-      "label": "电报代理"
+      "description": "专为 Telegram 设计的代理",
+      "label": "Telegram代理"
     },
     "telegram_adtag": {
       "description": "它用于在客户端的聊天列表中显示赞助频道。要宣传频道，请从 @MTProxybot 获取标签。\n在该机器人中输入代码 0123456789ABCDEF0123456789ABCDEF。",
@@ -714,7 +800,7 @@
     },
     "telegram_bot_token": {
       "description": "添加 Telegram 机器人功能。您需要使用@BotFather创建一个机器人并在此字段中输入API代码",
-      "label": "🔐 Telegram 机器人代币"
+      "label": "🔐 Telegram 机器人令牌"
     },
     "telegram_enable": {
       "description": "Telegram MTProto 用于将 Telegram Proxy 封装为 tls 流量",
@@ -722,7 +808,7 @@
     },
     "telegram_fakedomain": {
       "description": "请使用您数据中心内的知名域名。例如，如果您位于 Azure 数据中心，microsoft-update.com 就是一个很好的例子",
-      "label": "📺 Telegram 假域名"
+      "label": "📺 Telegram Fake Domain"
     },
     "telegram_lib": {
       "description": "您可以在不同的 Telegram 库之间切换。请注意，只有Python可以在所有服务器上运行，其他服务器可能会出现一些问题。更改后测试代理。",
@@ -731,6 +817,17 @@
     "tls": {
       "description": "可以在此部分设置 TLS 配置。",
       "label": "TLS 配置"
+    },
+    "tls_fragment_enable": {
+      "description": "在某些情况下，它可以绕过SNI阻断",
+      "label": "⏯ Enable TLS Fragment"
+    },
+    "tls_fragment_size": {
+      "description": "每个包的大小",
+      "label": "🎚 TLS Fragment 尺寸"
+    },
+    "tls_fragment_sleep": {
+      "description": "Fragment之间的时间延迟"
     },
     "tls_ports": {
       "description": "逗号分隔的整数，指示用作 TLS 连接的端口（在任何情况下都将使用端口 443）",

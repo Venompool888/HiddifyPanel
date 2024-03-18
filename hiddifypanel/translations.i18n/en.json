@@ -514,7 +514,7 @@
     },
     "hysteria_down_mbps": {
       "description": "Hysteria Maximum Download Speed",
-      "label": "⬇️ Hysteria Download (mbps)"
+      "label": "⬇️ Hysteria Download (Mbps)"
     },
     "hysteria_enable": {
       "description": "To Enable UDP based Hysteria Protocol",
@@ -530,7 +530,7 @@
     },
     "hysteria_up_mbps": {
       "description": "Hysteria Maximum Upload Speed",
-      "label": "⬆️ Hysteria Upload (mbps)"
+      "label": "⬆️ Hysteria Upload (Mbps)"
     },
     "is_parent": {
       "description": "config.is_parent.description",
@@ -566,7 +566,7 @@
     },
     "mux_brutal_down_mbps": {
       "description": "TCP-Brutal Maximum Download Speed",
-      "label": "⬇️ MUX Brutal Download (mbps)"
+      "label": "⬇️ MUX Brutal Download (Mbps)"
     },
     "mux_brutal_enable": {
       "description": "Enables TCP-Brutal congestion control algorithm",
@@ -574,7 +574,7 @@
     },
     "mux_brutal_up_mbps": {
       "description": "TCP-Brutal Maximum Upload Speed",
-      "label": "⬆️ MUX Brutal Upload (mbps)"
+      "label": "⬆️ MUX Brutal Upload (Mbps)"
     },
     "mux_enable": {
       "description": "Mux needs compatible clients. Mux in Hiddify Next and Singbox are not compatible with XRay",
@@ -661,7 +661,7 @@
       "label": "Proxies Settings"
     },
     "proxy_path": {
-      "description": "We use secret proxy path to hide our proxies for the gouvernment",
+      "description": "We use secret proxy path to hide our proxies for the government",
       "label": "ℹ️ Secret Proxy Path"
     },
     "proxy_path_admin": {
