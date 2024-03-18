@@ -240,7 +240,7 @@
   "User activated!": "User Activated",
   "User is inactive": "User Is Inactive",
   "User usage will be updated every 6 minutes": {
-    " To update it now click <a href=\"%(link)s\"\n        class=\"btn btn-info\">here</a>": "🔄 User usage will be updated every 1 Minutes. to update it now <a href='%(link)s' class='btn btn-info'>Click Here</a>"
+    " To update it now click <a href=\"%(link)s\"\n        class=\"btn btn-info\">here</a>": "🔄 User usage will be updated every 6 Minutes. to update it now <a href='%(link)s' class='btn btn-info'>Click Here</a>"
   },
   "V2rayNG": "Alternative v2rayNG <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>\n<br />\n<br />",
   "V2rayNG intro": "Please install v2rayNG from either of these links: %(dl_link)s  %(play_link)s.\nThen copy the link below and paste it in v2rayNG according to the video tutorial <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>.\n<br />",
@@ -341,7 +341,7 @@
       "title": "Loon"
     },
     "nekobox": {
-      "description": "app.nekobox.description",
+      "description": "NekoBox description ",
       "title": "NekoBox"
     },
     "shadowrocket": {

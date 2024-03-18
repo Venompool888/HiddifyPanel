@@ -45,6 +45,7 @@
   "Create Directory": "创建目录",
   "Create New Record": "创建新纪录",
   "Create Package": "创建包",
+  "Current Domain": "当前域名",
   "Dear {}\n\nYour hiddify information is\nUUID: {}\nLast online date: {}\nExpire time: {}\nUsage class: {}\n": "亲爱的 {}\n\n您的 Hiddify 信息是\nUUID：{}\n最后在线日期：{}\n过期时间：{}\n使用类别：{}",
   "Define the admin mode": {
     " ": "🥇🥈🥉 定义管理模式"
@@ -52,57 +53,66 @@
   "Define the user mode": {
     " Should the usage reset every month?": "用户的套餐模式。使用量是否应该每月、每周等重置"
   },
+  "Delete?": "是否删除？",
   "Develop": "⚠️开发",
   "Direct": "➖ 直接",
-  "Direct mode means you want to use your server directly (for usual use), CDN means that you use your server on behind of a CDN provider.": "➡️ <b>直接：</b>如果您在仅 DNS 模式下在 DNS 提供商上专门配置域，请选择此模式。 （CDN 或代理模式关闭）<br>\n🔙 <b>旧 Direct 模式：</b> 该模式与 Direct 模式类似，但不使用 gRPC 进行通信。如果您希望在 DNS 提供商上以仅 DNS 模式配置域而不使用 gRPC，请选择旧模式。\n<br>\n🔀 <b>CDN：</b>如果您的服务器域使用 CDN 提供商，请选择此模式。 （代理模式开启）<br>\n☑️ <b>自动 CDN IP 选择器：</b>此模式的功能与 CDN 模式类似，但根据 <a href='https://ircf.space' target='_blank' 提供的 IP 进行自动 IP 分配>ircf.space</a>。 Auto CDN IP 模式下，从域名解析 IP 地址，CDN 模式下，返回域名。<br>\n♾️ <b>中继：</b>如果您使用一台或多台中间服务器，请选择此模式。 <a href='https://github.com/hiddify/hiddify-config/discussions/129' target='_blank'>了解更多</a>\n<br>\n✴️ <b>Cloudflare Worker：</b>此模式可以在 Cloudflare 中自动为您的域创建工作人员。通过注册此域来简化工作人员的设置和管理，因为工作人员注册的必要步骤是在 Cloudflare 中自动处理的。\n<br>\n🔂 <b>Reality：</b> 利用 Reality 协议创建多个域。\n<br>\n🆎 <b>假站点：</b>如果您想使用假域名（例如 Soft98.ir）绕过 SNI 白名单代理，请选择此模式。 （不建议）\n<br>",
+  "Direct mode means you want to use your server directly (for usual use), CDN means that you use your server on behind of a CDN provider.": "➡️ <b>直接：</b>如果您在仅 DNS 模式下在 DNS 提供商上专门配置域，请选择此模式。 （CDN 或代理模式关闭）<br>\n🔙 <b>旧 Direct 模式：</b> 该模式与 Direct 模式类似，但不使用 gRPC 进行通信。如果您希望在 DNS 提供商上以仅 DNS 模式配置域而不使用 gRPC，请选择旧模式。\n<br>\n🔀 <b>CDN：</b>如果您的服务器域名使用 CDN 提供商，请选择此模式。 （代理模式开启）<br>\n☑️ <b>自动 CDN IP 选择器：</b>此模式的功能与 CDN 模式类似，但根据 <a href='https://ircf.space' target='_blank' 提供的 IP 进行自动 IP 分配>ircf.space</a>。 Auto CDN IP 模式下，从域名解析 IP 地址，CDN 模式下，返回域名。<br>\n♾️ <b>中继：</b>如果您使用一台或多台中间服务器，请选择此模式。 <a href='https://github.com/hiddify/hiddify-config/discussions/129' target='_blank'>了解更多</a>\n<br>\n✴️ <b>Cloudflare Worker：</b> 此模式可在 Cloudflare 中为您的域名自动创建工作器。通过注册此域名，可以简化工作器的设置和管理。（因为在 Cloudflare 中工作器注册所需的步骤会自动处理。）\n<br>\n🔂 <b>Reality：</b> 利用 Reality 协议创建多个域名。\n<br>\n🆎 <b>伪装站点：</b>如果您想使用伪装域名（例如 Soft98.ir）绕过 SNI 白名单代理，请选择此模式。 （不建议）\n<br>",
   "Disable": "禁用",
   "Disk": "硬盘",
-  "Domain": "领域",
-  "Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode": "域 (%(domain)s)-> IP = %(domain_ip)s 与您的 IP = %(server_ip)s 不同。这在直接模式下是必需的",
-  "Domain can not be resolved! there is a problem in your domain": "域名无法解析！您的域有问题。请检查您的域配置。",
-  "Domain is not REALITY friendly!": "域名对现实不友好！",
-  "Domain?": "领域？",
+  "Domain": "域名",
+  "Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode": "域名 (%(domain)s)-> IP = %(domain_ip)s 与您的 IP = %(server_ip)s 不同。Direct模式下需相同！",
+  "Domain IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode": "域名 IP=%(domain_ip)s 与您的 IP=%(server_ip)s 不匹配，而直连模式要求匹配。",
+  "Domain can not be resolved! there is a problem in your domain": "域名无法解析！您的域名有问题。请检查您的域名配置。",
+  "Domain is not REALITY friendly!": "此域名不适合用于 Reality ！",
+  "Domain?": "域名？",
   "Donation": {
+    "description": "✳️ 我们需要您的帮助来开发这个项目\n<br>\n如果您是开发者或内容制作者，请联系我们： <a href='mailto:info@hiddify.com'>info@hiddify.com</a>\n<br><br>\nℹ️ 此外，我们需要财务支持来进一步开发此面板和我们的服务（我们是非营利性组织）。\n<br>\n<h5>支付方式：</h5>\n<ul>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' role='button' class='btn btn-info share-link'>TON</a> </div></li>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' role='button' class='btn btn-info share-link'>USDT (TRC20)</a> </div></li>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' role='button' class='btn btn-info share-link'>Litecoin</a> </div></li>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' role='button' class='btn btn-info share-link'>Ethereum</a> </div></li>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' role='button' class='btn btn-info share-link'>Bitcoin</a> </div></li>\n<li> <div class='btn-group'>\n    <a role='button' data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n<a data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' role='button' class='btn btn-info share-link'>Dogecoin</a> </div></li>\n</ul>\n<br>\n我们还需要其他帮助：\n<ul>\n<li>👥 与其他人分享 Hiddify Manager</li>\n<li>📝 Python 开发者</li>\n<li>📝 Swift 开发者</li>\n<li>📝 Flutter 开发者</li>\n<li>📝 Go 开发者</li>\n<li>🖥 内容提供者</li>\n</ul>\n如果您可以帮助我们，请通过 <a href='mailto:info@hiddify.com'>info@hiddify.com</a> 联系我们。",
     "title": "捐款"
   },
-  "Download App": "下载应用程序",
+  "Download App": "<i class='fa-solid fa-download'></i>\n下载应用程序",
+  "Edit": "编辑",
   "Edit Proxy Names": "✏️ 修改代理",
-  "Enable": "❇️启用",
-  "Error in auto cdn format": "⚠️ 自动 CDN 格式错误",
-  "Error! auto cdn ip can not be find, please contact admin.": "自动 CDN IP 错误！找不到，请联系管理员",
-  "Example Domains": "测试并建议域",
+  "Enable": "❇️ 启用",
+  "Error in auto cdn format": "⚠️ 自动 CDN 的格式错误",
+  "Error! auto cdn ip can not be find, please contact admin.": "自动 CDN 的 IP 错误！找不到 IP，请联系管理员",
+  "Example Domains": "测试并建议域名",
   "Expired Users": "过期用户",
-  "Fake": "➖ 假货",
-  "Finished": "完成的...",
-  "From Last Restart": "从上次重新启动开始",
-  "From when the user package will be started? Empty for start from first connection": "指定包的开始日期。留空以从第一个连接开始。",
-  "Hiddify": "希迪菲",
-  "Hiddify Android": "Android 系统",
-  "HiddifyClash": "希迪冲突",
+  "Export": "导出 （Export）",
+  "Fake": "➖ 伪装 （fake）",
+  "Filter": "过滤器",
+  "Finished": "完成...",
+  "From Last Restart": "从上次重启开始",
+  "From when the user package will be started? Empty for start from first connection": "指定套餐（package）的开始日期。留空以从第一个连接开始。",
+  "Hiddify": "Hiddify",
+  "Hiddify Android": "Hiddify Android 版本",
+  "HiddifyClash": "HiddifyClash",
   "HiddifyN intro": "请从 %(dl_link)s 安装 HiddifyN。\n然后点击下面的链接。它会自动完成所有事情。\n<br/>",
   "HiddifyNG": "HiddifyNG <span class='badge badge-success'>推荐</span>",
-  "HiddifyNG intro": "📌 请从以下任一链接安装 HiddifyNG：\n<br/>\n %(dl_link)s %(play_link)s\n<br/>\n然后单击下面的链接并在 HiddifyNG 中打开它。\n<br/>",
+  "HiddifyNG intro": "📌 请从以下任一链接安装 HiddifyNG：\n<br/>\n %(dl_link)s %(play_link)s\n<br/>\n然后单击下面的链接并使用 HiddifyNG 打开 。\n<br/>",
   "HiddigyN": "HiddifyN <span class='badge badge-success'>推荐</span>",
   "Hooray 🎉 🎉 🎉 \nWelcome to hiddifybot": {
-    "\nStart by clicking the link on the panel or entering your UUID.": "万岁🎉🎉🎉\n欢迎使用 Hiddify 机器人\n首先单击面板上的链接或输入您的 UUID。"
+    "\nStart by clicking the link on the panel or entering your UUID.": "好嘞！🎉🎉🎉\n欢迎使用 Hiddify 机器人\n单击面板上的链接或输入您的 UUID。"
   },
-  "Hover the user to see the reason": "将鼠标悬停在用户上即可查看原因",
+  "Hover the user to see the reason": "将鼠标悬停在用户上以查看原因",
   "How many days this package should be available?": "这个套餐有多少天？",
   "How many?": "多少？",
   "If monthly is enabled, the usage will be reset after 30 days from this date.": "如果启用每月选项，当该数字达到 30 时，用户使用量将被重置（对于每周和每日，该数字为 7 和 1）",
-  "Import": "在应用程序中导入",
+  "If the application do not open automatically, please click <a class='btn btn-primary copy-link'\n                    href='%(sub)s'>this universal link</a> to copy and paste it on\n                your application, or:": "如果应用程序未自动打开，请点击 <a class='btn btn-primary copy-link' href='%(sub)s'>此通用链接</a> 复制并粘贴到您的应用程序中，或者：",
+  "Import": "导入到 App",
   "Import in": "导入",
   "In 5 minutes": "5 分钟内",
+  "In CDN mode, Domain IP=%(domain_ip)s should be different to your ip=%(server_ip)s": "在 CDN 模式下， Domain IP=%(domain_ip)s 应当与你的 ip=%(server_ip)s 不同",
   "In this section, you can add your domain": {
     " You need to add at least one domain in direct mode.": "1️⃣ 在此部分中，您可以添加您的域名。\n<br>\n2️⃣ 如果您想减少出现脏 IP 的可能性，可以添加多个中继服务器<a href='https://github.com/hiddify/hiddify-config/discussions/129'>阅读更多</a>。\n<br>\n3️⃣ 如果您的面板中有多个 IPv4 或 IPv6，您必须将指向它们的域添加为中继。"
   },
   "Incorrect Password": "⚠️密码错误",
   "Install": "安装",
   "Install Hiddify Application": "Hiddify 管理器安装",
+  "Invalid IP or domain": "无效的 IP 或 域名",
   "Invalid REALITY hostnames": "无效的 REALITY 主机名",
   "Invalid admin link": "管理员链接无效",
   "Iran": "🇮🇷伊朗",
-  "It seems that you are using default domain (%(domain)s) which is not recommended.": "看来您正在使用默认域（％（domain）s），这是不推荐的。请从域部分更改或删除它。",
+  "It seems that you are using default domain (%(domain)s) which is not recommended.": "看来您正在使用默认域名（％（domain）s），这是不推荐的。请从域部分更改或删除它。",
   "It seems that you have not created any users yet": {
     " Default user link: %(default_link)s": "您似乎还没有创建任何用户。默认用户链接：%(default_link)s"
   },
@@ -121,55 +131,61 @@
   "Month Usage": "每月",
   "More Applications": "更多应用",
   "Network": "网络",
-  "No children!": "没有孩子",
+  "New": "New",
+  "No children!": "No Children",
   "Note": "📝 注意",
   "Offline more than 1 day": "离线超过1天",
   "Offline more than 1 hour": "离线1小时以上",
   "Offline more than 1 week": "离线超过1周",
   "Ok": "好的",
   "Online Users": "在线用户",
-  "Only Blocked and Local websites": "☑️ 仅屏蔽和本地网站",
+  "Only Blocked and Local websites": "☑️ 仅屏蔽和当地网站",
   "Only for sublink?": "🌍 仅用于订阅链接",
-  "Oops! Something went wrong.": "哎呀！出了些问题。",
+  "Oops! Something went wrong.": "糟糕！出了些问题。",
   "Open in Application": "在应用程序中打开",
   "Others": "🇺🇳其他",
   "Override Root Admin": "🔁 覆盖备份中的所有者",
-  "Package Days": "📆 套餐日",
-  "Package ended!": "套餐已结束",
-  "Package not started yet.": "套餐还没开始。",
+  "Owner can not be deleted!": "所有者不能被删除！",
+  "Package Days": "📆 套餐天数",
+  "Package ended!": "套餐已停售",
+  "Package not started yet.": "套餐还没开放",
   "Panel Link": "➖ 面板链接",
-  "Parent Panel": "家长小组",
+  "Parent Panel": "Parent Panel",
   "Please Wait.": {
     ".": "请稍等..."
   },
   "Please click on %(install)s to save the user page.": "单击 %(install)s 保存用户页面。",
   "Please connect your telegram account to the panel to be informed about latest news.": "请将您的 Telegram 帐户连接到面板以获取最新消息。",
   "Please connect your telegram accout to the panel to be informed about latest news.": "请将您的 Telegram 帐户连接到面板以了解您的订阅的最新状态",
-  "Please create an issue on Github.": "请在 Github 上创建问题",
+  "Please create an issue on Github.": "请在 Github 上创建 issue",
   "Please note that your panel can be accessed only via <a href=\"%(adminlink)s\" class=\"btn btn-primary copy-link\">%(adminlink)s</a>": {
     " Please save this link.": "请注意，您的面板只能通过以下链接访问。请保存此链接。\n<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i class='fa-solid fa-copy'></i></a>\n<a href='%(adminlink)s' class='copy-link' style='word-break: break-all;'>%(adminlink)s</a></p>"
   },
-  "Please select one of the following applications:": "📍请选择以下应用程序之一：\n<br/>\n<br/>",
+  "Please select at least one file.": "请选择至少一个文件",
+  "Please select at least one record.": "请选择至少一条记录",
+  "Please select one of the following applications:": "📍请选择以下一个应用程序：\n<br/>\n<br/>",
   "Please type your message to send to the telegram:": "✏️ 请写下您要发送到 Telegram 的消息：",
-  "Please understand that parent panel is under test and the plan and the condition of use maybe change at anytime.": "请理解，家长面板正在测试中，计划和使用条件可能随时发生变化。",
+  "Please understand that parent panel is under test and the plan and the condition of use maybe change at anytime.": "请理解，Parent Panel 正在测试中，计划和使用条件可能随时发生变化。",
   "Please wait ": "请稍等",
   "Port is already used! in": "端口已用于：",
   "Premium Description": "Hiddify Manager 仅供非商业用途。但如果您将此面板用于商业用途，请通过捐赠来帮助该项目发展。 <br/>\n为了换取您的财务支持，我们还为您的商业产品提供特殊设施。\n<br/>\n<br/>\n例如：\n<ul><li>\n<li>同步到Cloudflare的可能性：即通过在面板中添加域名，也可以在Cloudflare中进行相关设置</li>\n<li>可以在面板中显示您的品牌</li>\n<li>可以使用中央面板在一个面板中管理多于一台服务器，因此不再需要在不同服务器中注册用户，并且用户的数量将在所有服务器中收集。\n</li>\n<li>\n使用 Telegram 机器人的可能性\n</li>\n<li>\n能够更改代理名称\n</li>\n</ul>\n\n捐赠后请联系<a href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a>。\n发送消息获取商业用户专用版本。",
-  "ProxyPath is already used! use different proxy path": "ProxyPath 已被使用！使用不同的代理路径",
+  "ProxyPath is already used! use different proxy path": "ProxyPath 已被使用！使用不同的 proxy path",
   "QR code": "🧾 二维码",
   "QRCode": "<i class='fa-solid fa-qrcode'></i> QRCode",
   "RAM": "内存",
-  "REALITY Fallback domain is not compaitble with server names!": "REALITY 后备域与服务器名称不兼容！",
+  "REALITY Fallback domain is not compaitble with server names!": "REALITY 后备域名与服务器名称不兼容！",
   "Release": "✅ 发布",
-  "Remaining: ": "包裹结束",
+  "Remaining: ": "套餐已停售",
   "Remote nodes are not supported yet!": "尚不支持远程节点！",
-  "Reset Usage Time:": "流量使用重置时间：",
+  "Rename File": "重命名文件",
+  "Reset Filters": "重置过滤器",
+  "Reset Usage Time:": "流量重置时间：",
   "Reset every month": "每月",
   "Reset package days": "📆 重置套餐天数",
   "Reset package usage": "⏳ 重置套餐的使用情况",
   "Restore": "♻️恢复",
   "Restore Domain": "🌏 恢复域名",
-  "Restore Domain description": "选择此选项可恢复您的域",
+  "Restore Domain description": "选择此选项可恢复您的域名",
   "Restore File": "恢复文件",
   "Restore File Description": "选择下载的恢复文件",
   "Restore Settings": "⚙️恢复设置",
@@ -180,13 +196,18 @@
   "Save": "保存",
   "Save & Add More": "保存并添加更多",
   "Save Link": "保存链接",
+  "Select all records": "全选所有记录",
+  "Select record": "选择记录",
   "Send Message to User's Telegram": "📣 向用户的 Telegram 发送消息",
   "Sending": "正在发送...",
-  "Show Domains": "显示域的配置",
+  "Should be a valid domain": "必须是有效域名！",
+  "Should be a valid uuid": "必须是有效UUID！",
+  "Show Domains": "显示域名配置",
   "Simplifies the process of employing the link elsewhere.": "简化了在其他地方使用链接的过程",
-  "SingBox": "📦 歌盒",
+  "SingBox": "📦 Sing Box",
+  "Sort by %(name)s": "以 %(name)s 排序",
   "Start Date": "开始日期",
-  "Status": "地位",
+  "Status": "状态",
   "Submit": "提交",
   "Success": "成功",
   "Success! Please wait around 4 minutes to make sure everything is updated": {
@@ -196,24 +217,25 @@
   "Telegram Bot": "电报机器人",
   "Temporary Short Link": "⏱️临时短链接",
   "The action done successfully": {
-    " You can now leave this page.": "✅ 行动成功完成。您现在可以离开此页面"
+    " You can now leave this page.": "✅ 行为成功完成。您现在可以离开此页面"
   },
   "The message has been sent.": "消息已发送。",
   "The message was not sent to": "该消息未发送至",
-  "The name shown in the configs for this domain.": "将显示在该域的配置中的名称。",
+  "The name shown in the configs for this domain.": "将显示在该域名的配置中的名称。",
   "The page has been moved to a new link": {
     " Please copy and save the new link.": "该页面已移至新链接。请复制并保存新链接。"
   },
-  "This can be used for giving your users a permanent non blockable links.": "这可用于为您的用户提供永久的不可阻止链接。",
+  "This can be used for giving your users a permanent non blockable links.": "这可用于为您的用户提供永久的不可被屏蔽的链接。（This can be used for giving your Users a permanent non Blockable Links.）",
   "This domain does not exist in the panel!": "该域名在面板中不存在！",
   "This version of hiddify panel is outdated": {
-    " Please update it from admin area.": "⚠️ 此版本的 Hiddify Manager 已过时。请从管理区域更新"
+    " Please update it from admin area.": "⚠️ 此版本的 Hiddify Manager 已过时。请从管理界面更新！"
   },
   "Today Usage": "今天",
   "Too many Connected IPs": "连接的IP太多",
   "Total Usage": "总使用量",
   "Turn of VPN": "关闭VPN",
   "Unified link for all application.": "所有应用程序的一键设置链接（推荐）",
+  "Upload File": "上传链接",
   "Use HiddifyNext:": "使用 HiddifyNext：",
   "User activated!": "用户激活",
   "User is inactive": "用户处于非活动状态",
@@ -222,41 +244,42 @@
   },
   "V2rayNG": "替代 v2rayNG <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>\n<br/>\n<br/>",
   "V2rayNG intro": "请从以下任一链接安装 v2rayNG：%(dl_link)s %(play_link)s。\n然后按照视频教程复制下面的链接粘贴到v2rayNG中 <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa -问题'></i> </按钮>。\n<br/>",
-  "View in Telegram": "在电报中查看",
+  "View in Telegram": "在 Telegram 中查看",
   "Want to enjoy more with telegram?": "ℹ️ 将您的帐户连接到 Telegram",
   "Welcome %(user)s": "欢迎%(user)s",
   "Welcome to admin bot": {
-    " Choose your action": "欢迎使用管理机器人。选择你的行动"
+    " Choose your action": "欢迎使用管理机器人。选择你的行为"
   },
-  "Why Going to Premium?": "为什么要选择高级版？",
-  "Windows": "视窗",
-  "Xray": "☢️ X射线",
+  "Why Going to Premium?": "为什么要选择 Premium？",
+  "Windows": "Windows",
+  "With selected": "With selected",
+  "Xray": "☢️ XRay",
   "Yesterday Usage": "昨天",
   "You can download a json formated of configurations by clicking <a href='%(link)s' class='btn btn-primary'>here</a>": "🔄 Hiddify Manager 每 6 小时自动进行一次备份。备份文件在服务器上的路径：⬇️\n<br>\n/opt/hiddify-config/hiddify-panel/备份\n<br>\n<br>\n<br>\n⚠️您可以通过单击下面的按钮下载配置的 JSON 文件格式\n<br>\n<br>\n<a href='%(link)s' class='btn btn-primary'>下载备份文件</a>",
   "You can restore your configs from previously downloaded configs": "ℹ️您可以从以前下载的备份文件恢复您的配置",
   "You can select the configs with which domains show be shown in the user area": {
-    " If you select all, automatically, all the new domains will be added for each users.": "对于访问该域的用户区的用户，指定他们可以看到哪些域的代理。\n<br>\n建议：对于IP未过滤且与其他域不同的域，选择所有其他域（当前域除外）。因此，由于该 IP 的使用不是用于代理，并且它是一个简单的网站，因此该域名和 IP 永远不会被阻止，您的用户可以轻松更新新的配置文件。"
+    " If you select all, automatically, all the new domains will be added for each users.": "对于访问该域的用户区的用户，指定他们可以看到哪些域的代理。\n<br>\n建议：对于IP未被屏蔽且与其他域名不同的域名，选择所有其他域名（当前域名除外）。因此，由于该 IP 的使用不是用于代理，并且它是一个简单的网站，因此该域名和 IP 永远不会被阻止，您的用户可以轻松更新新的配置文件。"
   },
   "You have too much users! You can have only %(active)s active users and %(total)s users": "你的用户太多了！您只能拥有 %(active)s 个活跃用户和 %(total)s 个用户",
   "You have used this domain in: ": "您已在以下位置使用过该域名：",
   "You should visit this page without VPN": {
-    " Your country=%(your_country)s\nexpected=%(expected_country)s": "您应该在没有 VPN 的情况下访问此页面 Your Country =%(your_country)s\n预期=%(expected_country)s"
+    " Your country=%(your_country)s\nexpected=%(expected_country)s": "您应该在没有 VPN 的情况下访问此页面 你所处地区=%(your_country)s\n理应所在地区=%(expected_country)s"
   },
   "Your domains changed": {
     " Please do not forget to copy admin links, otherwise you can not access to the panel anymore.": "⚠️ 您的域名已更改。请不要忘记复制管理链接，否则您将无法再访问面板"
   },
-  "Your hiddify instance information \nDomain: {} \nUsage limit: {} GB\nCurrent usage: {} GB\nExpires at: {} \nRemaining days: {} \n\n\n Happy using 🎉 🎉 🎉 \n": "您的 Hiddify 实例信息\n领域： {}\n使用限制：{} GB\n当前使用情况：{} GB\n到期时间：{}\n剩余天数：{}\n\n\n祝你好运！ 🎉🎉🎉",
+  "Your hiddify instance information \nDomain: {} \nUsage limit: {} GB\nCurrent usage: {} GB\nExpires at: {} \nRemaining days: {} \n\n\n Happy using 🎉 🎉 🎉 \n": "您的 Hiddify 实例信息\n域名： {}\n使用限制：{} GB\n当前使用情况：{} GB\n到期时间：{}\n剩余天数：{}\n\n\n祝你好运！ 🎉🎉🎉",
   "[Admin only visible message:] You can change this message from settings": "[管理员专用消息]：可通过设置自定义。",
-  "actions": "行动",
-  "admin link": "行政",
+  "actions": "行为",
+  "admin link": "管理员",
   "admin": {
     "Actions:apply_configs": "应用配置",
     "actions": {
       "apply_configs": "应用配置",
       "reinstall": "重新安装",
       "reset": "重启系统",
-      "status": "地位",
-      "title": "行动",
+      "status": "状态",
+      "title": "行为",
       "update": "更新",
       "viewlogs": "查看日志"
     },
@@ -265,13 +288,14 @@
       "title": "设置"
     },
     "menu": {
-      "api": "应用程序编程接口",
+      "api": "API",
       "config": "设置",
       "domain": "域名",
       "home": "仪表板",
       "proxy": "代理",
+      "proxy_stats": "代理状态",
       "support": "帮助",
-      "telegram": "电报",
+      "telegram": "Telegram",
       "user": "用户"
     },
     "proxy": {
@@ -281,76 +305,76 @@
     "quicksetup": {
       "title": "快速设置"
     },
-    "quicksetup_intro": "您的服务器的 IP 是：\n<div>\nIPv4：%(ipv4)s <br> IPv6：%(ipv6)s\n</div>\n在您的域或子域上设置这些 IP，然后在下面的框中输入您的域或子域。"
+    "quicksetup_intro": "您的服务器的 IP 是：\n<div>\nIPv4：%(ipv4)s <br> IPv6：%(ipv6)s\n</div>\n在您的域名或子域名上设置这些 IP，然后在下面的框中输入您的域名或子域名。"
   },
   "all": "全部",
   "android": "安卓",
   "app": {
     "foxray": {
-      "description": "福克斯射线描述",
-      "title": "福克斯X射线"
+      "description": "FoXray 介绍（description）",
+      "title": "FoXray"
     },
     "hiddify-clash-android": {
       "description": "app.hiddify-clash-android.description",
-      "title": "希迪冲突"
+      "title": "Hiddify Clash"
     },
     "hiddify-clash-desktop": {
       "description": "app.hiddify-clash-desktop.description",
-      "title": "希迪冲突"
+      "title": "Hiddify Clash"
     },
     "hiddify": {
       "next": {
-        "description": "Hiddify 下一个说明",
-        "title": "下一个"
+        "description": "Hiddify Next 介绍",
+        "title": "Hiddify Next"
       }
     },
     "hiddifyn": {
-      "description": "HiddifyN 描述",
-      "title": "希迪尼"
+      "description": "HiddifyN 介绍",
+      "title": "HiddifyN"
     },
     "hiddifyng": {
-      "description": "HiddifyNG 描述",
+      "description": "HiddifyNG 介绍",
       "title": "HiddifyNG"
     },
     "loon": {
-      "description": "潜鸟描述",
-      "title": "龙"
+      "description": "Loon 介绍",
+      "title": "Loon"
     },
     "nekobox": {
-      "description": "应用程序.nekobox.描述",
-      "title": "猫盒子"
+      "description": "NekoBox 介绍",
+      "title": "NekoBox"
     },
     "shadowrocket": {
-      "description": "暗影火箭描述",
-      "title": "暗影火箭"
+      "description": "Shadowrocket 介绍",
+      "title": "Shadowrocket"
     },
     "stash": {
-      "description": "藏匿描述",
-      "title": "藏"
+      "description": "Stash 介绍",
+      "title": "Stash"
     },
     "streisand": {
-      "description": "史翠珊描述",
-      "title": "史翠珊"
+      "description": "Streisand 介绍",
+      "title": "Streisand"
     },
     "v2rayng": {
-      "description": "V2RayNG 说明",
+      "description": "V2RayNG 介绍",
       "title": "V2RayNG"
     }
   },
-  "auto": "汽车",
-  "auto_cdn_ip": "☑️ 自动 CDN IP 选择器",
+  "auto": "自动",
+  "auto_cdn_ip": "☑️ CDN IP 自动选择器",
   "cdn": "🔀 CDN（Cloudflare 代理，...）",
-  "child has been removed!": "孩子已被移走！",
+  "child has been removed!": "Child 已被移走！",
   "clickable copy": "社交媒体链接",
   "close": "关闭",
   "config": {
-    "Domain already used": "域存在于域部分。使用另一个域",
+    "Domain already used": "域名存在！请使用另一个域名！",
     "Invalid brand link": "无效的链接。它应该采用以下格式：（https 或 http://example.com）",
-    "Invalid domain": "错误！无效域名。域名格式为 www.google.com",
-    "Invalid port": "端口无效。它应该是逗号分隔的整数，例如2052,2053",
+    "Invalid domain": "出错啦！无效域名。域名格式为 www.google.com",
+    "Invalid port": "端口无效。它应该是逗号（英文状态）分隔的整数，例如2052,2053",
     "Invalid proxy path": "代理路径无效。它应该是 ASCI 字符串 (a-z A-Z 0-9)",
-    "Invalid telegram bot token": "Telegram 机器人令牌无效",
-    "Invalid! The pattern is number-number": "⚠️配置无效！模式是数字-数字",
+    "Invalid telegram bot token": "Telegram 机器人令牌（Token）无效",
+    "Invalid! The pattern is number-number": "⚠️ 格式应当是 数字-数字 ⚠️",
     "Invalid! it should be a number only": "⚠️配置无效！它应该只是一个数字",
     "admin": {
       "description": "管理部分用于配置管理相关设置",
@@ -365,7 +389,7 @@
       "label": "管理员密码"
     },
     "advanced": {
-      "description": "在这一部分中，有一些高级配置，除非您是高级用户，否则最好不要更改",
+      "description": "在这一部分中，有一些高级配置，除非您是专业用户，否则最好不要更改",
       "label": "高级设置"
     },
     "allow_invalid_sni": {
@@ -386,18 +410,18 @@
     },
     "branding_freetext": {
       "description": "品牌文字。此框的文本将显示在用户页面的支持部分。你可以使用 HTML 标签",
-      "label": "📢 支持部分文本"
+      "label": "📢 Support Section Text"
     },
     "branding_site": {
       "description": "将在用户页面的支持部分显示的链接。\n您还可以将您的 Telegram Channel 或 Telegram PV 放在这里。",
-      "label": "🆔 支持链接（既出现在品牌标题上，也出现在用户页面的支持部分）"
+      "label": "🆔 Support Link（既出现在品牌标题上，也出现在用户页面的支持部分）"
     },
     "branding_title": {
-      "description": "输入要在用户页面上显示的自定义标题。 （在 yser 的欢迎文字之前）",
+      "description": "输入要在用户页面上显示的自定义标题。 （在 user 的欢迎文字之前）",
       "label": "👁‍🗨 用户页面标题"
     },
     "cdn_forced_host": {
-      "description": "在此部分中，您可以使用一组特定域或 IP 来在用户链接中覆盖您的服务器。\n\n如果你使用<a href='https://ircf.space/export.php'>这个模板</a>，会根据用户的运营商选择相关的IP，如果你输入了一系列IP的IP将从该范围中随机选择。\n使用<a target='_blank' href='https://ip-format.hiddify.com'>此链接</a>设置个人 IP。",
+      "description": "在此部分中，您可以使用一组特定域名或 IP 来在用户链接中覆盖您的服务器。\n\n如果你使用<a href='https://ircf.space/export.php'>这个模板</a>，会根据用户的运营商选择相关的IP，如果你输入了一系列IP的IP将从该范围中随机选择。\n使用<a target='_blank' href='https://ip-format.hiddify.com'>此链接</a>设置个人 IP。",
       "label": "🔂 强制配置使用以下 IP"
     },
     "cloudflare": {
@@ -420,8 +444,12 @@
       "description": "数据库版本说明",
       "label": "数据库版本标签"
     },
+    "dbvalues": {
+      "description": "config.dbvalues.description",
+      "label": "config.dbvalues.label"
+    },
     "decoy_domain": {
-      "description": "假网站：当有人直接访问您的域时模拟网站。<br>\n⚠️ 不要使用金融、伊朗和著名网站或需要登录的网站，例如 Google、Yahoo、Wikipedia、PayPal。<br>\n⛔ 请务必检查该网站并确保它是正确的网站，否则您可能会收到网络钓鱼警告。<br>\n⛔⛔ 再次检查该域名，以免以后出现问题",
+      "description": "伪装网站：当有人直接访问您的域时模拟网站。<br>\n⚠️ 不要使用金融、伊朗和著名网站或需要登录的网站，例如 Google、Yahoo、Wikipedia、PayPal。<br>\n⛔ 请务必检查该网站并确保它是正确的网站，否则您可能会收到网络钓鱼警告。<br>\n⛔⛔ 再次检查该域名，以免以后出现问题",
       "label": "📺 诱饵网站"
     },
     "dns_server": {
@@ -434,7 +462,7 @@
     },
     "domain_fronting_domain": {
       "description": "它用于在 SNI 中模拟另一个网站而不是您的网站。因此，GFW 无法过滤您的域。",
-      "label": "ℹ️ 域名前置"
+      "label": "ℹ️ 域前置"
     },
     "domain_fronting_http_enable": {
       "description": "启用 HTTP 域前置会导致您的域很快被阻止。",
@@ -449,16 +477,20 @@
       "label": "🛡️ 防火墙"
     },
     "first_setup": {
-      "description": "config.first_setup.描述",
-      "label": "配置.first_setup.label"
+      "description": "config.first_setup.description",
+      "label": "cknfig.first_setup.label"
     },
     "general": {
       "description": "这是一般系统配置",
       "label": "常规设置"
     },
+    "grpc_enable": {
+      "description": "gRPC 是一个现代的开源高性能远程过程调用（RPC）框架。它可以在支持的 CDN 中使用。",
+      "label": "➿ 启用 gRPC"
+    },
     "hidden": {
-      "description": "配置.隐藏.描述",
-      "label": "配置.隐藏.标签"
+      "description": "config.hidden.description",
+      "label": "config.hidden.label"
     },
     "http": {
       "description": "HTTP 配置可以在此部分设置",
