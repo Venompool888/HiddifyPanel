@@ -1006,7 +1006,7 @@
         "expect_vless": "除了VLess"
       },
       "android": {
-        "intro": "请从 %(dl_link)s %(play_link)s 安装 Hiddify Android。\n\n<!--\n<div class='callout callout-danger'>\n    <b>将 Hiddify Android 更新至版本 0.14</b>\n</div>-->\n<详情>\n<summary>为什么要隐藏 Android？</summary>\n<div class='callout callout-info'>\n\n        Hiddify Android 是 Clash 的开源分支，支持更多协议。\n        <br>\n        它的源代码存在于\n        <a href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>。\n        \n        <br>\n        因此，它是安全的。\n\n        <详情>\n            <summary>替代方案：正常冲突</summary>\n            <div class='btn-group'>\n                <a href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n                    class='btn btn-warning orig-link'>Google Play 中的冲突</a>\n            </div>\n            <div class='btn-group'>\n                <a href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n                    class='btn btn-warning orig-link'>直接下载</a>\n            </div>\n\n            <div class='警报警报-危险'>\n            Clash 不支持 VLess 协议。因此，我们需要为其添加另一个链接。\n            </div>\n            \n\n        </详情>\n    </div>\n</详情>"
+        "intro": "请从 %(dl_link)s %(play_link)s 安装 Hiddify Android。\n\n<!--\n<div class='callout callout-danger'>\n    <b>将 Hiddify Android 更新至版本 0.14</b>\n</div>-->\n<详情>\n<summary>为什么要隐藏 Android？</summary>\n<div class='callout callout-info'>\n\n        Hiddify Android 是 Clash 的开源分支，支持更多协议。\n        <br>\n        它的源代码存在于\n        <a href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>。\n        \n        <br>\n        因此，它是安全的。\n\n        <详情>\n            <summary>替代方案：正常Clash</summary>\n            <div class='btn-group'>\n                <a href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n                    class='btn btn-warning orig-link'>Google Play 中的冲突</a>\n            </div>\n            <div class='btn-group'>\n                <a href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n                    class='btn btn-warning orig-link'>直接下载</a>\n            </div>\n\n            <div class='警报警报-危险'>\n            Clash 不支持 VLess 协议。因此，我们需要为其添加另一个链接。\n            </div>\n            \n\n        </详情>\n    </div>\n</详情>"
       },
       "branding": {
         "linktitle": "支持页面链接",
@@ -1020,19 +1020,19 @@
         },
         "alternative_for_normal_clash": "Clash 的替代链接",
         "foreign_sites": {
-          "btn": "安装国外网站",
+          "btn": "为访问国外网站安装",
           "description": "对所有外国站点（甚至未被阻止的站点）使用代理。\n<div class='callout callout-warning'>\n此模式在访问某些受制裁的网站时很有用。\n</div>",
           "title": "国外网站代理"
         },
         "intro": "现在，根据您的需求，单击以下链接之一。\n<br/>",
-        "link_for_normal_clash": "安装冲突",
+        "link_for_normal_clash": "安装Clash ",
         "only_for_blocked_sites": {
           "btn": "仅针对被阻止的站点安装",
           "description": "建议使用此模式。它仅通过代理转发被阻止的站点。\n            <div class='callout callout-success'>\n                在此模式下，您不会感觉到速度有任何变化。\n            </div>",
           "title": "仅适用于被阻止的网站"
         }
       },
-      "doh": "HTTPS 上的 DNS",
+      "doh": "DNS Over HTTPS (DoH)",
       "ios": {
         "others": {
           "intro": "首先安装以下应用程序之一：\n\n<div class='btn-group'>\n\n<a href='https://apps.apple.com/us/app/foxray/id6448898396'\n        class='btn btn-primary orig-link'>FoXray</a>\n\n</div>\n\n<div class='btn-group'>\n\n<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n        class='btn btn-primary orig-link'>公平 VPN</a>\n</div>\n\n<br/>\n然后应用以下配置：\n<br/>",
@@ -1060,10 +1060,10 @@
         "upload": "上传"
       },
       "telegram": {
-        "clickbtn": "电报代理",
+        "clickbtn": "Telegram代理",
         "description": "单击以下链接之一，然后在电报中您可以看到一个包含<b>连接代理</b>的窗口。点击它，它就会起作用。\n<br/>"
       },
-      "title": "希迪菲",
+      "title": "Hiddify",
       "tool": {
         "all-configs": "所有配置",
         "doh": {
